@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 @font-face {
     font-family: 'lovelo';
     src: url('../fonts/Lovelo Black.otf');
@@ -8,25 +10,61 @@
     margin: 0%;
 }
 
+body {
+    background-image: url(../img/backgroundWhite.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
 #header {
     display: flex;
+    margin: 20px 0px 0px 0px;
+}
+
+#brand {
+    color: white;
+    margin: 0px 400px 0px 25px;
+    font-size: 15px;
 }
 
 .linksHeader {
     font-family: 'lovelo';
     text-decoration: none;
     color: black;
+    margin: 0px 230px 0px 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 100px 0px 0px 200px;
 }
 
 #title {
+    font-size: 31px;
     font-family: 'lovelo';
+    margin: 0px 100px 18px 0px;
 }
 
-#buttons button{
+#markedWord {
+    color: white;
+}
+
+#content {
+    font-family: "Roboto Mono", monospace;
+    line-height: 1.8;
+    font-size: 15px;
+    margin: 40px 100px 20px 0px;
+}
+
+#buttons button {
+    font-family: "Roboto Mono", monospace;
     border: none;
-    border-radius: 40px;
-    width: 130px;
-    height: 35px;
     background-color: black;
     color: white;
+    border-radius: 40px;
+    width: 170px;
+    height: 50px;
+    margin: 40px 93px 0px 50px;
 }
