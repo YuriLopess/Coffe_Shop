@@ -5,6 +5,11 @@
     src: url('../fonts/Lovelo Black.otf');
 }
 
+@font-face {
+    font-family: 'open sauce';
+    src: url(../fonts/OpenSauceOne-Black.ttf);
+}
+
 * {
     padding: 0%;
     margin: 0%;
@@ -23,6 +28,7 @@ body {
 
 #brand {
     color: white;
+    font-family: 'open sauce';
     margin: 0px 400px 0px 25px;
     font-size: 15px;
 }
