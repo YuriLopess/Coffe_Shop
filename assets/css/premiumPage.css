@@ -50,7 +50,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    margin: 10px 0px 0px 10px;
+    margin: 100px 0px 0px 80px;
 }
 
 #title {
@@ -80,5 +80,5 @@ main {
     border-radius: 40px;
     width: 170px;
     height: 50px;
-    margin: 40px 93px 0px 0px;
+    margin: 40px 120px 0px 0px;
 }
