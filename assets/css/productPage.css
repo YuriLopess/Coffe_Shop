@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@font-face {
+    font-family: 'lovelo';
+    src: url('../fonts/Lovelo Black.otf');
+}
+
+@font-face {
+    font-family: 'open sauce';
+    src: url(../fonts/OpenSauceOne-Black.ttf);
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-image: url(../img/backgroundWhite.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+#header {
+    display: flex;
+    margin: 20px 0px 0px 0px;
+}
+
+#brand {
+    color: white;
+    font-family: 'open sauce';
+    margin: 0px 400px 0px 25px;
+    font-size: 11.5px;
+}
+
+.linksHeader {
+    font-family: 'lovelo';
+    text-decoration: none;
+    color: black;
+    margin: 0px 230px 0px 0px;
+}
+
+#title {
+    font-size: 31px;
+    font-family: 'lovelo';
+    margin: 0px 100px 18px 0px;
+}
