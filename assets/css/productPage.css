@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
 
 @font-face {
     font-family: 'lovelo';
@@ -40,8 +40,50 @@ body {
     margin: 0px 230px 0px 0px;
 }
 
-#title {
-    font-size: 31px;
+main {
+    margin: 40px 0px 0px 0px;
+}
+
+.title {
     font-family: 'lovelo';
-    margin: 0px 100px 18px 0px;
+    font-size: 22px;
+    margin: 80px 100px 18px 400px;
+}
+
+.subTitle {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    margin: 0px 0px 0px 310px;
+}
+
+#product {
+    display: flex;
+    margin: 20px 0px 0px 70px;
+}
+
+.productImg {
+    padding: 16px;
+    border-radius: 20px;
+    margin: 40px 45px 0px 50px;
+    background-color: rgb(182, 37, 182);
+
+}
+
+#block {
+    margin: 170px 100px 120px 110px;
+    padding: 90px 20px 90px 20px;
+    border-radius: 20px;
+    background-color: rgb(153, 12, 141);
+    color: white;
+    font-family: 'lovelo';
+}
+
+#blockButton {
+    border: none;
+    background-color:#A1A271 ;
+    font-family: 'lovelo';
+    border-radius: 20px;
 }

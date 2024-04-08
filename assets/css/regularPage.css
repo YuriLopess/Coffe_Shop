@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
 
 @font-face {
     font-family: 'lovelo';
@@ -58,14 +58,20 @@ main {
 }
 
 #content {
-    font-family: "Roboto Mono", monospace;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     line-height: 1.8;
     font-size: 15px;
     margin: 40px 100px 20px 0px;
 }
 
 #buttons button {
-    font-family: "Roboto Mono", monospace;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     border: none;
     background-color: black;
     color: white;
