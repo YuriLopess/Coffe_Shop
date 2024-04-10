@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
 
 @font-face {
     font-family: 'lovelo';
@@ -87,25 +89,37 @@ main {
 
 #product {
     display: flex;
-    margin: 20px 0px 0px 70px;
+    margin: 45px 0px 0px 70px;
 }
 
 .productImg {
-    padding: 16px;
+    padding: 30px;
     border-radius: 20px;
-    margin: 40px 45px 0px 50px;
-    background-color: rgb(182, 37, 182);
+    margin: 50px 45px 0px 65px;
+    background-color: rgba(255, 255, 255, 0.7);
 
 }
 
+.productLabel {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin: 40px 0px 0px 100px;
+}
+
 #block {
-    margin: 170px 100px 120px 110px;
-    padding: 90px 20px 90px 20px;
+    margin: 275px 100px 120px 110px;
+    padding: 75px 20px 75px 20px;
     border-radius: 20px;
     font-size: 40px;
     background-image: linear-gradient(90deg, #000000, #2C272E);
     color: white;
     font-family: 'lovelo';
+}
+
+#blockTitle {
+    margin:-30px 0px 0px 20px;
 }
 
 #blockButton {
@@ -116,4 +130,21 @@ main {
     border-radius: 30px;
     font-size: 20px;
     padding: 17px;
+    margin: 35px 0px 0px 20px;
+}
+
+#blockImg {
+    position: absolute;
+    margin: -200px 0px 300px 700px;
+    width: 300px;
+    height: 450px;
+}
+
+#partePrincipal {
+    height: 280px;
+    width: 100%;
+    margin: 150px 0px 0px 0px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: linear-gradient(90deg, #000000, #2C272E);
 }
