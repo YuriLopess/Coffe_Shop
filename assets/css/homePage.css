@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
 
 @font-face {
     font-family: 'lovelo';
@@ -23,34 +23,60 @@ body {
 
 #header {
     display: flex;
-    margin: 20px 0px 0px 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0px 0px 0px 0px;
 }
 
 #brand {
     color: white;
     font-family: 'open sauce';
-    margin: 0px 400px 0px 25px;
-    font-size: 11.5px;
+    font-size: 25px;
+    margin: 14px 0px 0px 20px;
 }
 
-.linksHeader {
+#brandLink {
+    color: white;
+    text-decoration: none;
+}
+
+#links {
+    font-size: 17.5px;
+}
+
+#linkAboutUs {
     font-family: 'lovelo';
     text-decoration: none;
     color: black;
-    margin: 0px 230px 0px 0px;
+    margin: 0px 313px 0px 0px;
+}
+
+#linkProducts {
+    font-family: 'lovelo';
+    text-decoration: none;
+    color: black;
+    margin: 0px 313px 0px 0px;
+}
+
+#linkOurClub {
+    font-family: 'lovelo';
+    text-decoration: none;
+    color: black;
+    margin: 0px 100px 0px 0px;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin: 100px 0px 0px 200px;
+    margin: 75px 0px 0px 200px;
 }
 
 #title {
     font-size: 31px;
     font-family: 'lovelo';
-    margin: 0px 100px 18px 0px;
+    margin: 0px 125px 18px 0px;
 }
 
 #markedWord {
@@ -63,8 +89,8 @@ main {
     font-weight: 700;
     font-style: normal;
     line-height: 1.8;
-    font-size: 15px;
-    margin: 40px 100px 20px 0px;
+    font-size: 16px;
+    margin: 40px 120px 20px 0px;
 }
 
 #buttons button {
@@ -78,5 +104,5 @@ main {
     border-radius: 40px;
     width: 170px;
     height: 50px;
-    margin: 40px 93px 0px 50px;
+    margin: 40px 110px 0px 50px;
 }

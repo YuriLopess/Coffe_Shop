@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+@font-face {
+    font-family: 'lovelo';
+    src: url('../fonts/Lovelo Black.otf');
+}
+
+@font-face {
+    font-family: 'open sauce';
+    src: url(../fonts/OpenSauceOne-Black.ttf);
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-image: url(../img/backgroundWhite.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0px 0px 0px 0px;
+}
+
+#brand {
+    color: white;
+    font-family: 'open sauce';
+    font-size: 25px;
+    margin: 14px 0px 0px 20px;
+}
+
+#brandLink {
+    color: white;
+    text-decoration: none;
+}
+
+#links {
+    font-size: 17.5px;
+}
+
+#linkAboutUs {
+    font-family: 'lovelo';
+    text-decoration: none;
+    color: black;
+    margin: 0px 313px 0px 0px;
+}
+
+#linkProducts {
+    font-family: 'lovelo';
+    text-decoration: none;
+    color: black;
+    margin: 0px 313px 0px 0px;
+}
+
+#linkOurClub {
+    font-family: 'lovelo';
+    text-decoration: none;
+    color: black;
+    margin: 0px 100px 0px 0px;
+}

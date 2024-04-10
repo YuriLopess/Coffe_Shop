@@ -23,21 +23,47 @@ body {
 
 #header {
     display: flex;
-    margin: 20px 0px 0px 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0px 0px 0px 0px;
 }
 
 #brand {
     color: white;
     font-family: 'open sauce';
-    margin: 0px 400px 0px 25px;
-    font-size: 11.5px;
+    font-size: 25px;
+    margin: 14px 0px 0px 20px;
 }
 
-.linksHeader {
+#brandLink {
+    color: white;
+    text-decoration: none;
+}
+
+#links {
+    font-size: 17.5px;
+}
+
+#linkAboutUs {
     font-family: 'lovelo';
     text-decoration: none;
     color: black;
-    margin: 0px 230px 0px 0px;
+    margin: 0px 313px 0px 0px;
+}
+
+#linkProducts {
+    font-family: 'lovelo';
+    text-decoration: none;
+    color: black;
+    margin: 0px 313px 0px 0px;
+}
+
+#linkOurClub {
+    font-family: 'lovelo';
+    text-decoration: none;
+    color: black;
+    margin: 0px 100px 0px 0px;
 }
 
 main {
@@ -76,7 +102,8 @@ main {
     margin: 170px 100px 120px 110px;
     padding: 90px 20px 90px 20px;
     border-radius: 20px;
-    background-color: rgb(153, 12, 141);
+    font-size: 40px;
+    background-image: linear-gradient(90deg, #000000, #2C272E);
     color: white;
     font-family: 'lovelo';
 }
@@ -84,6 +111,9 @@ main {
 #blockButton {
     border: none;
     background-color:#A1A271 ;
+    color: white;
     font-family: 'lovelo';
-    border-radius: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 17px;
 }
