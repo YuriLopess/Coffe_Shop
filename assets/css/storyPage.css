@@ -65,3 +65,34 @@ body {
     color: black;
     margin: 0px 100px 0px 0px;
 }
+
+.container {
+    margin: 70px 40px 0px 40px;
+    display: flex;
+}
+
+.title {
+    font-size: 31px;
+    font-family: 'lovelo';
+    margin: 0px 125px 18px 0px;
+}
+
+#markedWord {
+    color: white;
+}
+
+.content {
+    font-family: 'lovelo';
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.8;
+    font-size: 16px;
+    margin: 40px 120px 20px 0px;
+}
+
+#place {
+    border-radius: 40px;
+    width: 820px;
+    height: 390px;
+}
