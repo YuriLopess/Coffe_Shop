@@ -107,7 +107,7 @@ main {
 }
 
 #block {
-    margin: 275px 100px 120px 110px;
+    margin: 275px 100px 180px 110px;
     padding: 75px 20px 75px 20px;
     border-radius: 20px;
     font-size: 40px;
@@ -138,13 +138,19 @@ main {
     height: 450px;
 }
 
-.capsuleImg {
-    padding: 30px;
-    border-radius: 20px;
-    margin: 50px 45px 0px 55px;
-    background-color: rgba(255, 255, 255, 0.7);
-    height: 230px;
-    width: 160px;
+.titleSeasonal {
+    font-family: 'lovelo';
+    font-size: 22px;
+    margin: 80px 80px 18px 355px;
+}
+
+.subTitleSeasonal {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    margin: 0px 0px 0px 265px;
 }
 
 footer {
@@ -152,7 +158,7 @@ footer {
     box-sizing: border-box;
     letter-spacing: 1px;
     color: white;
-    
+    margin-top: 170px;
 }
 
 .footer_link {
