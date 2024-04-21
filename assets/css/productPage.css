@@ -1,5 +1,7 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap');
 
+/* Defining custom fonts */
 @font-face {
     font-family: 'lovelo';
     src: url('../fonts/Lovelo Black.otf');
@@ -10,18 +12,21 @@
     src: url(../fonts/OpenSauceOne-Black.ttf);
 }
 
+/* Resetting default styles */
 * {
     padding: 0%;
     margin: 0%;
 }
 
+/* Body styles */
 body {
     background-image: url(../img/backgroundWhite.jpg);
     background-repeat: no-repeat;
     background-size: cover
 }
 
-#header {
+/* Header styles */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,17 +71,18 @@ body {
     margin: 0px 100px 0px 0px;
 }
 
+/* Main section styles */
 main {
     margin: 40px 0px 0px 0px;
 }
 
-.title {
+#title {
     font-family: 'lovelo';
     font-size: 22px;
     margin: 80px 100px 18px 400px;
 }
 
-.subTitle {
+#subTitle {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -85,7 +91,8 @@ main {
     margin: 0px 0px 0px 310px;
 }
 
-#product {
+/* Products section styles */
+.products {
     display: flex;
     margin: 45px 0px 0px 70px;
 }
@@ -95,7 +102,6 @@ main {
     border-radius: 20px;
     margin: 50px 45px 0px 65px;
     background-color: rgba(255, 255, 255, 0.7);
-
 }
 
 .productLabel {
@@ -106,6 +112,7 @@ main {
     margin: 40px 0px 0px 100px;
 }
 
+/* Block section styles */
 #block {
     margin: 275px 100px 180px 110px;
     padding: 75px 20px 75px 20px;
@@ -117,12 +124,12 @@ main {
 }
 
 #blockTitle {
-    margin:-30px 0px 0px 20px;
+    margin: -30px 0px 0px 20px;
 }
 
 #blockButton {
     border: none;
-    background-color:#A1A271 ;
+    background-color: #A1A271;
     color: white;
     font-family: 'lovelo';
     border-radius: 30px;
@@ -138,13 +145,13 @@ main {
     height: 450px;
 }
 
-.titleSeasonal {
+#titleSeasonal {
     font-family: 'lovelo';
     font-size: 22px;
     margin: 80px 80px 18px 355px;
 }
 
-.subTitleSeasonal {
+#subTitleSeasonal {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -153,49 +160,50 @@ main {
     margin: 0px 0px 0px 265px;
 }
 
+/* Footer styles */
 footer {
     width: 100%;
     box-sizing: border-box;
     letter-spacing: 1px;
     color: white;
-    margin-top: 170px;
+    margin-top: 220px;
 }
 
-.footer_link {
+.footerLink {
     text-decoration: none;
 }
 
-#footer_content {
+#footerContent {
     border-radius: 50px 50px 0px 0px;
-    background-color:#000000;
+    background-color: #000000;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 60px 70px;
 }
 
-#footer_contacts h1 {
+#footerContacts h1 {
     margin-bottom: 15px;
     font-size: 25px;
     font-family: 'open sauce';
 }
 
-#footer_social_media {
+#footerSocialMedia {
     display: flex;
     gap: 40px;
     margin-top: 30px;
 }
 
-#footer_social_media .footer_link {
+#footerSocialMedia .footerLink {
     height: 50px;
     width: 50px;
     color: white;
 }
 
-#footer_social_media .footer_link i {
+#footerSocialMedia .footerLink i {
     font-size: 20px;
 }
 
-.footer-list {
+.footerList {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     display: flex;
@@ -204,12 +212,12 @@ footer {
     list-style: none;
 }
 
-.footer-list .footer_link{
+.footerList .footerLink {
     color: #454346;
     font-weight: 500;
 }
 
-#footer_subscribe {
+#footerSubscribe {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     display: flex;
@@ -217,18 +225,18 @@ footer {
     gap: 30px;
 }
 
-#footer_subscribe p{
+#footerSubscribe p {
     color: #454346;
     font-weight: 500;
-} 
+}
 
-#input_group {
+#inputGroup {
     display: flex;
     align-items: center;
     border-radius: 20px;
 }
 
-#input_group input {
+#inputGroup input {
     background-color: white;
     border: none;
     padding: 15px;
@@ -236,12 +244,12 @@ footer {
     border-radius: 20px 0px 0px 20px;
 }
 
-#input_group input:focus,
-#input_group input:active {
+#inputGroup input:focus,
+#inputGroup input:active {
     outline: none;
 }
 
-#input_group button {
+#inputGroup button {
     border: none;
     padding: 0px 25px;
     font-size: 22.5px;
