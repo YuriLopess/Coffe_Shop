@@ -108,23 +108,56 @@ main {
 
 /* Products section styles */
 .products {
+    height: 495px;
     display: flex;
-    margin: 45px 0px 0px 70px;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+.productsBlock {
+    padding-bottom: 40px; 
+    margin: 90px 70px 20px 60px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px 40px 40px 40px;
+    border-radius: 30px;
 }
 
 .productImg {
-    padding: 30px;
-    border-radius: 20px;
-    margin: 50px 45px 0px 65px;
-    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center; 
+    margin: 10px 0; 
 }
 
 .productLabel {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    font-family: 'lovelo';
+    margin-top: 15px;
+}
+
+.productPrice {
+    text-align: center; 
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    margin: 40px 0px 0px 100px;
+    margin-top: 15px;
+}
+
+.productsButton {
+    text-align: center; 
+    margin-top: 15px;
+}
+
+.productsButton button{
+    background-color:black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'lovelo';
 }
 
 /* Block section styles */
@@ -181,7 +214,7 @@ footer {
     box-sizing: border-box;
     letter-spacing: 1px;
     color: white;
-    margin-top: 220px;
+    margin-top: 200px;
 }
 
 .footerLink {
