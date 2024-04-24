@@ -1,0 +1,194 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+
+/* Defining custom fonts */
+@font-face {
+    font-family: 'lovelo';
+    src: url('../fonts/Lovelo Black.otf');
+}
+
+@font-face {
+    font-family: 'open sauce';
+    src: url(../fonts/OpenSauceOne-Black.ttf);
+}
+
+/* Resetting default styles */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+/* Body styles */
+body {
+    background-image: url(../img/backgroundWhite.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+/* Header styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0px 0px 0px 0px;
+}
+
+#brand {
+    font-family: 'open sauce';
+    font-size: 25px;
+    margin: 14px 0px 0px 20px;
+}
+
+#brandLink {
+    color: white;
+    text-decoration: none;
+}
+
+#links a{
+    font-size: 17px;
+    color: black;
+    font-family: 'lovelo';
+    text-decoration: none;
+    position: relative;
+    padding: 0px 0px 10px 0px;
+}
+
+#links a::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    border-radius: 15px;
+}
+
+#links a:hover::after {
+    width: 100%;
+}
+
+#linkAboutUs {
+    margin: 0px 290px 0px 0px;
+}
+
+#linkProducts {
+    margin: 0px 290px 0px 0px;
+}
+
+#linkOurClub {
+    margin: 0px 80px 0px 0px;
+}
+
+#linkCart {
+    margin: 0px 20px 100px 130px;
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    color: white;
+    margin-top: 200px;
+}
+
+.footerLink {
+    text-decoration: none;
+}
+
+#footerContent {
+    border-radius: 50px 50px 0px 0px;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 60px 70px;
+}
+
+#footerContacts h1 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-family: 'open sauce';
+}
+
+#footerSocialMedia {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+#footerSocialMedia .footerLink {
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+
+#footerSocialMedia .footerLink i {
+    font-size: 20px;
+}
+
+.footerList {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+}
+
+.footerList .footerLink {
+    color: #454346;
+    font-weight: 500;
+}
+
+#footerSubscribe {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#footerSubscribe p {
+    color: #454346;
+    font-weight: 500;
+}
+
+#inputGroup {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#inputGroup input {
+    background-color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#inputGroup input:focus,
+#inputGroup input:active {
+    outline: none;
+}
+
+#inputGroup button {
+    border: none;
+    padding: 0px 25px;
+    font-size: 22.5px;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #454346;
+}
+
+#copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 5px;
+}
