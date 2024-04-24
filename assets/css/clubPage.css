@@ -86,6 +86,50 @@ nav {
     margin: 0px 20px 100px 130px;
 }
 
+/* Main section styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 75px 0px 0px 200px;
+}
+
+#title {
+    font-size: 26px;
+    font-family: 'lovelo';
+    margin: 0px 140px 18px 0px;
+}
+
+#markedWord {
+    color: white;
+}
+
+#content {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.8;
+    font-size: 18.5px;
+    margin: 40px 140px 20px 0px;
+}
+
+/* Button styles */
+#buttons button {
+    font-family: 'lovelo';
+    cursor: pointer;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    width: 230px;
+    height: 55px;
+    margin: 40px 275px 0px 0px;
+}
+
 /* Footer styles */
 footer {
     width: 100%;

@@ -110,13 +110,18 @@ main {
     font-weight: 700;
     font-style: normal;
     line-height: 1.8;
-    font-size: 16px;
-    margin: 40px 180px 20px 0px;
+    font-size: 17px;
+    margin: 40px 155px 20px 0px;
 }
 
 /* Button styles */
+#buttons {
+    margin-right: 15px;
+}
+
 #buttons button {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'lovelo';
+    cursor: pointer;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
@@ -126,5 +131,5 @@ main {
     border-radius: 40px;
     width: 170px;
     height: 50px;
-    margin: 40px 110px 0px 50px;
+    margin: 40px 123px 0px 0px;
 }
