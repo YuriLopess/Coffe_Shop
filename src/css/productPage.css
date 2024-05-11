@@ -1,89 +1,113 @@
 /* Importing Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
 
 /* Defining custom fonts */
 @font-face {
     font-family: 'lovelo';
-    src: url('../fonts/Lovelo Black.otf');
+    src: url('../assets/fonts/Lovelo\ Black.otf');
 }
 
 @font-face {
     font-family: 'open sauce';
-    src: url(../fonts/OpenSauceOne-Black.ttf);
+    src: url(../assets/fonts/OpenSauceOne-Black.ttf);
 }
 
-/* Resetting default styles */
+:root {
+    --color-one: #E6E6E6;
+    --color-two: #181717;
+    --color-three: white;
+    --box-shadow: 3px 3px 11px 5px rgb(13 55 54 / 15%);
+}
+
 * {
-    padding: 0%;
     margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-margin-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
 }
 
-/* Body styles */
 body {
-    background-image: url(../img/backgroundWhite.jpg);
+    background-image: url(../assets/img/backgroundWhite.jpg);
     background-repeat: no-repeat;
     background-size: cover
 }
 
 /* Header styles */
 nav {
+    position:absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    margin: 0px 0px 0px 0px;
+    padding: 18px 100px;
+    transition: 0.5s linear;
 }
 
-#brand {
+.brand {
     font-family: 'open sauce';
-    font-size: 25px;
-    margin: 14px 0px 0px 20px;
+    color: var(--color-three);
+    font-size: 1.6rem;
 }
 
-#brandLink {
-    color: white;
-    text-decoration: none;
+#marked-word {
+    color: var(--color-three);
 }
 
-#links a{
-    font-size: 17px;
-    color: black;
-    font-family: 'lovelo';
-    text-decoration: none;
+.header-items {
+    display: flex;
+}
+
+.header-items a {
+    padding: 8px 17px;
+    margin: 0 15px;
+    color: var(--color-two);
+    font-size: 1.2rem;
+    text-transform: uppercase;
     position: relative;
-    padding: 0px 0px 10px 0px;
+    font-weight: 500;
+    font-family:'lovelo' ;
 }
 
-#links a::after {
+.header-items a::after {
     content: " ";
     width: 0%;
-    height: 4px;
-    background-color: black;
+    height: 3px;
+    background-color: var(--color-two);
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: 0.5s ease-in-out;
+    transition: 0.8s ease-in-out;
     border-radius: 15px;
 }
 
-#links a:hover::after {
+.header-items a:hover::after {
     width: 100%;
 }
 
-#linkAboutUs {
-    margin: 0px 290px 0px 0px;
+.header-icons {
+    font-size: 22px;
+    z-index: 1000;
+    column-gap: 0.8rem;
+    cursor: pointer;
+    display: flex;
 }
 
-#linkProducts {
-    margin: 0px 290px 0px 0px;
+.header-icons .fa-solid {
+    color: var(--color-two);
 }
 
-#linkOurClub {
-    margin: 0px 80px 0px 0px;
-}
-
-#linkCart {
-    margin: 0px 20px 100px 130px;
+#header-menu-icon {
+    color: #181717;
+    font-size: 24px;
+    z-index: 100001;
+    cursor: pointer;
+    display: none;
 }
 
 /* Main section styles */
@@ -95,15 +119,17 @@ main {
     font-family: 'lovelo';
     font-size: 22px;
     margin: 80px 100px 18px 400px;
+    color: var(--color-two);
 }
 
-#subTitle {
+#sub-title {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     font-size: 18px;
     margin: 0px 0px 0px 310px;
+    color: var(--color-two);
 }
 
 /* Products section styles */
@@ -115,20 +141,21 @@ main {
     margin-top: 30px;
 }
 
-.productsBlock {
+.products-block {
     padding-bottom: 40px; 
     margin: 90px 70px 20px 60px;
     background-color: white;
     padding: 20px 40px 40px 40px;
     border-radius: 30px;
+    box-shadow: var(--box-shadow);
 }
 
-.productImg {
+.product-img {
     text-align: center; 
     margin: 10px 0; 
 }
 
-.productLabel {
+.product-label {
     width: 100%; 
     display: flex;
     justify-content: center;
@@ -136,7 +163,7 @@ main {
     margin-top: 15px;
 }
 
-.productPrice {
+.product-price {
     text-align: center; 
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -145,13 +172,13 @@ main {
     margin-top: 15px;
 }
 
-.productsButton {
+.products-button {
     text-align: center; 
     margin-top: 15px;
 }
 
-.productsButton button{
-    background-color:black;
+.products-button button{
+    background-color: var(--color-two);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -171,11 +198,11 @@ main {
     font-family: 'lovelo';
 }
 
-#blockTitle {
+#block-title {
     margin: -30px 0px 0px 20px;
 }
 
-#blockButton {
+#block-button {
     border: none;
     background-color: #A1A271;
     color: white;
@@ -186,26 +213,28 @@ main {
     margin: 35px 0px 0px 20px;
 }
 
-#blockImg {
+#block-img {
     position: absolute;
     margin: -200px 0px 300px 700px;
     width: 300px;
     height: 450px;
 }
 
-#titleSeasonal {
+#title-seasonal {
     font-family: 'lovelo';
     font-size: 22px;
     margin: 80px 80px 18px 355px;
+    color: var(--color-two);
 }
 
-#subTitleSeasonal {
+#sub-title-seasonal {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     font-size: 18px;
     margin: 0px 0px 0px 265px;
+    color: var(--color-two);
 }
 
 /* Footer styles */
@@ -217,41 +246,41 @@ footer {
     margin-top: 200px;
 }
 
-.footerLink {
+.footer-link {
     text-decoration: none;
 }
 
-#footerContent {
+#footer-content {
     border-radius: 50px 50px 0px 0px;
-    background-color: #000000;
+    background-color: var(--color-two);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 60px 70px;
 }
 
-#footerContacts h1 {
+#footer-contacts h1 {
     margin-bottom: 15px;
     font-size: 25px;
     font-family: 'open sauce';
 }
 
-#footerSocialMedia {
+#footer-social-media {
     display: flex;
     gap: 40px;
     margin-top: 30px;
 }
 
-#footerSocialMedia .footerLink {
+#footer-social-media .footer-link {
     height: 50px;
     width: 50px;
     color: white;
 }
 
-#footerSocialMedia .footerLink i {
+#footer-social-media .footer-link i {
     font-size: 20px;
 }
 
-.footerList {
+.footer-list {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     display: flex;
@@ -260,12 +289,12 @@ footer {
     list-style: none;
 }
 
-.footerList .footerLink {
+.footer-list .footer-link {
     color: #454346;
     font-weight: 500;
 }
 
-#footerSubscribe {
+#footer-subscribe {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     display: flex;
@@ -273,18 +302,18 @@ footer {
     gap: 30px;
 }
 
-#footerSubscribe p {
+#footer-subscribe p {
     color: #454346;
     font-weight: 500;
 }
 
-#inputGroup {
+#input-group {
     display: flex;
     align-items: center;
     border-radius: 20px;
 }
 
-#inputGroup input {
+#input-group input {
     background-color: white;
     border: none;
     padding: 15px;
@@ -292,12 +321,12 @@ footer {
     border-radius: 20px 0px 0px 20px;
 }
 
-#inputGroup input:focus,
-#inputGroup input:active {
+#input-group input:focus,
+#input-group input:active {
     outline: none;
 }
 
-#inputGroup button {
+#input-group button {
     border: none;
     padding: 0px 25px;
     font-size: 22.5px;
@@ -311,6 +340,6 @@ footer {
     font-weight: 500;
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: var(--color-two);
     padding: 5px;
 }

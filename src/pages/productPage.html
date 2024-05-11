@@ -5,42 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="../css/productPage.css">
-    <link rel="shortcut icon" href="../img/favicon.png">
+    <link rel="shortcut icon" href="../assets/img/favicon.png">
     <title>Reserve Rest</title>
 </head>
 <body>
     
-    <!-- Models of coffee in the list and in the cart -->
-    <div class="models">
-
-        <!-- Coffe in the list -->
-        <div class="coffeItem">
-            <a href="#">
-                <div class="coffeItemImg"><img src="" alt=""></div>
-                <div class="coffeItemAdd">+</div>
-            </a>
-            <div class="coffeItemPrice">R$-</div>
-            <div class="coffeItemName">--</div>
-            <div class="coffeItemDesc">--</div>
-        </div>
-    </div>
-
     <!-- Header Section -->
     <header>
         <nav>
-            <!-- Brand Logo -->
-            <div id="brand">
-                <a href="homePage.html" id="brandLink">Reserve <br> Roast&reg;</a>
+            <p class="brand">Reserve <br> Roast&reg;</p>
+            <i class="fa-solid fa-bars" id="header-menu-icon"></i>
+            <ul class="header-items">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="productPage.html">Products</a></li>
+                <li><a href="storyPage.html">About Us</a></li>
+            </ul>
+            <div class="header-icons">
+                <a href="#"><i class="fa-solid fa-cart-shopping" id="cart"></i></a></i>
+                <a href="login.html"><i class="fa-solid fa-right-to-bracket" id="login"></i></a></i>
             </div>
-            <!-- Navigation Links -->
-            <div id="links">
-                <a href="productPage.html" id="linkProducts">products</a>
-                <a href="storyPage.html" id="linkAboutUs">about us</a>
-                <a href="clubPage.html" id="linkOurClub">our club</a>
-                <a href="#" id="linkCart"><i class="fa-solid fa-cart-shopping" ></i></a>
-            </div>  
         </nav>
-        
     </header>
 
     <main>
@@ -50,48 +34,48 @@
         </div>
     
         <!-- Subtitle section -->
-        <div id="subTitle">
+        <div id="sub-title">
             <p>The new premium coffee beans from Reserv Roast promise an unparalleled flavor experience.</p>
         </div>
     
         <!-- Products section -->
         <section class="products">
-            <div class="productsBlock">
-                <img src="../img/productViennese.png" alt="product" class="productImg">
-                <h5 class="productLabel">Viennese - 500g</h1>
-                <p class="productPrice">$20,00</p>
+            <div class="products-block">
+                <img src="../assets/img/productViennese.png" alt="product" class="product-img">
+                <h5 class="product-label">Viennese - 500g</h1>
+                <p class="product-price">$20,00</p>
             
-                <div class="productsButton">
+                <div class="products-button">
                     <button>BUY</button>
                 </div>
             </div>
         
-            <div class="productsBlock">
-                <img src="../img/productMorocan.png" alt="product" class="productImg">
-                <h5 class="productLabel">Morocan - 500g</h1>
-                <p class="productPrice">$20,00</p>
+            <div class="products-block">
+                <img src="../assets/img/productMorocan.png" alt="product" class="product-img">
+                <h5 class="product-label">Morocan - 500g</h1>
+                <p class="product-price">$20,00</p>
             
-                <div class="productsButton">
+                <div class="products-button">
                     <button>BUY</button>
                 </div>
             </div>
         
-            <div class="productsBlock">
-                <img src="../img/productNewOrleans.png" alt="product" class="productImg">
-                <h5 class="productLabel">Orleans - 500g</h1>
-                <p class="productPrice">$20,00</p>
+            <div class="products-block">
+                <img src="../assets/img/productNewOrleans.png" alt="product" class="product-img">
+                <h5 class="product-label">Orleans - 500g</h1>
+                <p class="product-price">$20,00</p>
             
-                <div class="productsButton">
+                <div class="products-button">
                     <button>BUY</button>
                 </div>
             </div>
         
-            <div class="productsBlock">
-                <img src="../img/productItalian.png" alt="product" class="productImg">
-                <h5 class="productLabel">Italian - 500g</h1>
-                <p class="productPrice">$20,00</p>
+            <div class="products-block">
+                <img src="../assets/img/productItalian.png" alt="product" class="product-img">
+                <h5 class="product-label">Italian - 500g</h1>
+                <p class="product-price">$20,00</p>
             
-                <div class="productsButton">
+                <div class="products-button">
                     <button>BUY</button>
                 </div>
             </div>
@@ -100,139 +84,134 @@
         <!-- Block section -->
         <div>
             <section id="block">
-                <img src="../img/productAmerican.png" alt="product" id="blockImg">
-                <p id="blockTitle">check our <br>best coffee beans</p>
-                <button id="blockButton">explore our products</button>
+                <img src="../assets/img/productAmerican.png" alt="product" id="block-img">
+                <p id="block-title">check our <br>best coffee beans</p>
+                <button id="block-button">explore our products</button>
             </section>
         </div>
     
         <!-- Seasonal title section -->
-        <div id="titleSeasonal">
+        <div id="title-seasonal">
             <h1>Explore our seasonal products</h1>
         </div>
     
         <!-- Seasonal subtitle section -->
-        <div id="subTitleSeasonal">
+        <div id="sub-title-seasonal">
             <p>Experience the unique and fleeting seasonal flavors with Reserv Roast's limited-time coffee beans.</p>
         </div>
     
         <!-- Seasonal products section -->
         <section class="products">
-            <div class="productsBlock">
-                <img src="../img/productMorocanBlue.jpg" alt="product" class="productImg">
-                <h5 class="productLabel">Morocan Blue - 300g</h1>
-                <p class="productPrice">$25,00</p>
+            <div class="products-block">
+                <img src="../assets/img/productMorocanBlue.jpg" alt="product" class="product-img">
+                <h5 class="product-label">Morocan Blue - 300g</h1>
+                <p class="product-price">$25,00</p>
             
-                <div class="productsButton">
+                <div class="products-button">
                     <button>BUY</button>
                 </div>
             </div>
         
-            <div class="productsBlock">
-                <img src="../img/productItalianOrange.jpg" alt="product" class="productImg">
-                <h5 class="productLabel">Italian Orange - 300g</h1>
-                <p class="productPrice">$25,00</p>
+            <div class="products-block">
+                <img src="../assets/img/productItalianOrange.jpg" alt="product" class="product-img">
+                <h5 class="product-label">Italian Orange - 300g</h1>
+                <p class="product-price">$25,00</p>
             
-                <div class="productsButton">
+                <div class="products-button">
                     <button>BUY</button>
                 </div>
             </div>
         
-            <div class="productsBlock">
-                <img src="../img/productMorocanPink.jpg" alt="product" class="productImg">
-                <h5 class="productLabel">Morocan Pink - 300g</h1>
-                <p class="productPrice">$25,00</p>
+            <div class="products-block">
+                <img src="../assets/img/productMorocanPink.jpg" alt="product" class="product-img">
+                <h5 class="product-label">Morocan Pink - 300g</h1>
+                <p class="product-price">$25,00</p>
             
-                <div class="productsButton">
+                <div class="products-button">
                     <button>BUY</button>
                 </div>
             </div>
         
-            <div class="productsBlock">
-                <img src="../img/productVienneseGreen.jpg" alt="product" class="productImg">
-                <h5 class="productLabel">Viennese Green - 300g</h1>
-                <p class="productPrice">$25,00</p>
+            <div class="products-block">
+                <img src="../assets/img/productVienneseGreen.jpg" alt="product" class="product-img">
+                <h5 class="product-label">Viennese Green - 300g</h1>
+                <p class="product-price">$25,00</p>
             
-                <div class="productsButton">
+                <div class="products-button">
                     <button>BUY</button>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Aside Section-->
-    <aside>
-
-    </aside>
-
     <!-- Footer Section -->
     <footer>
         <!-- Footer Content -->
-        <div id="footerContent">
+        <div id="footer-content">
             <!-- Brand Name and Social Media Icons -->
-            <div id="footerContacts">
+            <div id="footer-contacts">
                <h1>Reserve <br> Roast&reg;</h1> 
-               <div id="footerSocialMedia">
-                    <a href="#" class="footerLink" id="instagram">
+               <div id="footer-social-media">
+                    <a href="#" class="footer-link" id="instagram">
                     <i class="fa-brands fa-instagram"></i>
                     </a>
 
-                    <a href="#" class="footerLink" id="facebook">
+                    <a href="#" class="footer-link" id="facebook">
                     <i class="fa-brands fa-facebook"></i>
                     </a>
 
-                    <a href="#" class="footerLink" id="youtube">
+                    <a href="#" class="footer-link" id="youtube">
                     <i class="fa-brands fa-youtube"></i>
                     </a>
                </div>
             </div>
 
             <!-- Menu Links -->
-            <ul class="footerList">
+            <ul class="footer-list">
                 <li>
                     <h3>Menu</h3>
                 </li>
                 <li>
-                    <a href="../html/homePage.html" class="footerLink">Home</a>
+                    <a href="../index.html" class="footer-link">Home</a>
                 </li>
 
                 <li>
-                    <a href="../html/productPage.html" class="footerLink">Products</a>
+                    <a href="productPage.html" class="footer-link">Products</a>
                 </li>
 
                 <li>
-                    <a href="../html/storyPage.html" class="footerLink">Story</a>
+                    <a href="storyPage.html" class="footer-link">Story</a>
                 </li>
 
                 <li>
-                    <a href="../html/clubPage.html" class="footerLink">Club</a>
+                    <a href="clubPage.html" class="footer-link">Club</a>
                 </li>
 
             </ul>
 
             <!-- Policies Links -->
-            <ul class="footerList">
+            <ul class="footer-list">
                 <li>
                     <h3>Policies</h3>
                 </li>
                 <li>
-                    <p class="footerLink">Terms of Service</p>
+                    <p class="footer-link">Terms of Service</p>
                 </li>
 
                 <li>
-                    <p class="footerLink">Warranty Policy</p>
+                    <p class="footer-link">Warranty Policy</p>
                 </li>
 
                 <li>
-                    <p class="footerLink"> Cookie Policy</p>
+                    <p class="footer-link"> Cookie Policy</p>
                 </li>
             </ul>
 
             <!-- Subscription Form -->
-            <div id="footerSubscribe">
+            <div id="footer-subscribe">
                 <h3>Subscribe</h3>
                 <p>Enter your e-mail to get notified about our news solutions</p>
-                <div id="inputGroup">
+                <div id="input-group">
                     <input type="email" id="email">
                     <button>
                         <i class="fa-regular fa-envelope"></i>

@@ -4,12 +4,12 @@
 /* Custom font definitions */
 @font-face {
     font-family: 'lovelo';
-    src: url('../fonts/Lovelo Black.otf');
+    src: url('../assets/fonts/Lovelo\ Black.otf');
 }
 
 @font-face {
     font-family: 'open sauce';
-    src: url(../fonts/OpenSauceOne-Black.ttf);
+    src: url(../assets/fonts/OpenSauceOne-Black.ttf);
 }
 
 /* Resetting default margin and padding */
@@ -20,7 +20,7 @@
 
 /* Body styles */
 body {
-    background-image: url(../img/backgroundWhite.jpg);
+    background-image: url(../assets/img/backgroundWhite.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -40,7 +40,7 @@ nav {
     margin: 14px 0px 0px 20px;
 }
 
-#brandLink {
+#brand-link {
     color: white;
     text-decoration: none;
 }
@@ -70,23 +70,23 @@ nav {
     width: 100%;
 }
 
-#linkAboutUs {
+#link-about-us {
     margin: 0px 290px 0px 0px;
 }
 
-#linkProducts {
+#link-products {
     margin: 0px 290px 0px 0px;
 }
 
-#linkOurClub {
+#link-our-club {
     margin: 0px 80px 0px 0px;
 }
 
-#linkCart {
+#link-cart {
     margin: 0px 20px 100px 130px;
 }
 
-#ourStory {
+#our-story {
     display: flex;
     margin: 100px 40px 0px 40px;
 }
@@ -97,7 +97,7 @@ nav {
     margin: 0px 125px 18px 0px;
 }
 
-#markedWord {
+#marked-word {
     color: white;
 }
 
@@ -119,7 +119,7 @@ nav {
 }
 
 /* Our Blend section styles */
-#ourBlend {
+#our-blend {
     display: flex;
     align-items: center;
     margin-top: 200px;
@@ -132,15 +132,15 @@ nav {
     margin: 150px 100px 0px 40px;
 }
 
-#secondContent {
+#second-content {
     font-family: 'lovelo';
 }
 
-#secondTitle {
+#second-title {
     font-size: 35px;
 }
 
-.subTitle {
+.sub-title {
     margin: 60px 0px 20px 0px;
     font-size: 24px;
 }
@@ -158,11 +158,11 @@ footer {
     margin-top: 220px;
 }
 
-.footerLink {
+.footer-link {
     text-decoration: none;
 }
 
-#footerContent {
+#footer-content {
     border-radius: 50px 50px 0px 0px;
     background-color: #000000;
     display: grid;
@@ -170,29 +170,29 @@ footer {
     padding: 60px 70px;
 }
 
-#footerContacts h1 {
+#footer-contacts h1 {
     margin-bottom: 15px;
     font-size: 25px;
     font-family: 'open sauce';
 }
 
-#footerSocialMedia {
+#footer-social-media {
     display: flex;
     gap: 40px;
     margin-top: 30px;
 }
 
-#footerSocialMedia .footerLink {
+#footer-social-media .footer-link {
     height: 50px;
     width: 50px;
     color: white;
 }
 
-#footerSocialMedia .footerLink i {
+#footero-scial-media .footer-link i {
     font-size: 20px;
 }
 
-.footerList {
+.footer-list {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     display: flex;
@@ -201,12 +201,12 @@ footer {
     list-style: none;
 }
 
-.footerList .footerLink {
+.footer-list .footer-link {
     color: #454346;
     font-weight: 500;
 }
 
-#footerSubscribe {
+#footer-subscribe {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     display: flex;
@@ -214,18 +214,18 @@ footer {
     gap: 30px;
 }
 
-#footerSubscribe p {
+#footer-subscribe p {
     color: #454346;
     font-weight: 500;
 }
 
-#inputGroup {
+#input-group {
     display: flex;
     align-items: center;
     border-radius: 20px;
 }
 
-#inputGroup input {
+#input-group input {
     background-color: white;
     border: none;
     padding: 15px;
@@ -233,12 +233,12 @@ footer {
     border-radius: 20px 0px 0px 20px;
 }
 
-#inputGroup input:focus,
-#inputGroup input:active {
+#input-group input:focus,
+#input-group input:active {
     outline: none;
 }
 
-#inputGroup button {
+#input-group button {
     border: none;
     padding: 0px 25px;
     font-size: 22.5px;

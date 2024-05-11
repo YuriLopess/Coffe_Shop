@@ -4,132 +4,416 @@
 /* Defining custom fonts */
 @font-face {
     font-family: 'lovelo';
-    src: url('../fonts/Lovelo Black.otf');
+    src: url('../assets/fonts/Lovelo\ Black.otf');
 }
 
 @font-face {
     font-family: 'open sauce';
-    src: url(../fonts/OpenSauceOne-Black.ttf);
+    src: url(../assets/fonts/OpenSauceOne-Black.ttf);
 }
 
-/* Resetting default styles */
+:root {
+    --color-one: #E6E6E6;
+    --color-two: #181717;
+    --color-three: white;
+    --box-shadow: 2px 2px 10px 4px rgb(13 55 54 / 15%);
+}
+
 * {
-    padding: 0%;
     margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-margin-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
 }
 
-/* Body styles */
 body {
-    background-image: url(../img/backgroundCoffeWhite.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    color: var(--color-two);
 }
 
-/* Header styles */
 nav {
+    position:absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    margin: 0px 0px 0px 0px;
+    padding: 18px 100px;
+    transition: 0.5s linear;
 }
 
-#brand {
+.brand {
     font-family: 'open sauce';
-    font-size: 25px;
-    margin: 14px 0px 0px 20px;
+    color: var(--color-three);
+    font-size: 1.6rem;
 }
 
-#brandLink {
-    color: white;
-    text-decoration: none;
+#marked-word {
+    color: var(--color-three);
 }
 
-#links a{
-    font-size: 17px;
-    color: black;
-    font-family: 'lovelo';
-    text-decoration: none;
+.header-items {
+    display: flex;
+}
+
+.header-items a {
+    padding: 8px 17px;
+    margin: 0 15px;
+    color: var(--color-two);
+    font-size: 1.2rem;
+    text-transform: uppercase;
     position: relative;
-    padding: 0px 0px 10px 0px;
+    font-weight: 500;
+    font-family:'lovelo' ;
 }
 
-#links a::after {
+.header-items a::after {
     content: " ";
     width: 0%;
-    height: 4px;
-    background-color: black;
+    height: 3px;
+    background-color: var(--color-two);
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: 0.5s ease-in-out;
+    transition: 0.8s ease-in-out;
     border-radius: 15px;
 }
 
-#links a:hover::after {
+.header-items a:hover::after {
     width: 100%;
 }
 
-#linkAboutUs {
-    margin: 0px 290px 0px 0px;
+.header-icons {
+    font-size: 22px;
+    z-index: 1000;
+    column-gap: 0.8rem;
+    cursor: pointer;
+    display: flex;
 }
 
-#linkProducts {
-    margin: 0px 290px 0px 0px;
+.header-icons .fa-solid {
+    color: var(--color-two);
 }
 
-#linkOurClub {
-    margin: 0px 80px 0px 0px;
+#header-menu-icon {
+    color: #181717;
+    font-size: 24px;
+    z-index: 100001;
+    cursor: pointer;
+    display: none;
 }
 
-#linkCart {
-    margin: 0px 20px 100px 130px;
+section {
+    padding: 50px 100px;
 }
 
-/* Main section styles */
-main {
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../assets/img/backgroundCoffeWhite.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    gap: 1.5rem;
+}
+
+.home {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    margin: 75px 0px 0px 200px;
+    justify-content: center;
+    align-items:flex-end;
 }
 
-#title {
-    font-size: 31px;
+.home-text h1,
+.home-text p,
+.buttons {
+    margin: 30px 0;
+}
+
+.home-text h1 {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     font-family: 'lovelo';
-    margin: 0px 125px 18px 0px;
 }
 
-#markedWord {
-    color: white;
-}
-
-#content {
+.home-text p {
+    font-size: 0.938rem;
+    margin: 0.5rem 0.7rem;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    line-height: 1.8;
-    font-size: 17px;
-    margin: 40px 155px 20px 0px;
+    font-size: 1.1rem;
 }
 
-/* Button styles */
-#buttons {
-    margin-right: 15px;
-}
-
-#buttons button {
-    font-family: 'lovelo';
+.buttons button {
     cursor: pointer;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
     border: none;
-    background-color: black;
-    color: white;
+    background-color: var(--color-two);
+    color: var(--color-one);
     border-radius: 40px;
-    width: 170px;
-    height: 50px;
-    margin: 40px 123px 0px 0px;
+    padding: 15px 50px;
+    font-weight: 500;
+    font-family: 'lovelo';
+    margin: 0 100px 0 10px;
+}
+
+.divider {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-two);
+}
+
+.about {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 50px 0;
+}
+
+.about-img img {
+    border-radius: 0.5rem;
+    width: 550px;
+    height: 350px;
+    border: 3px solid var(--color-two);
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'lovelo';
+}
+
+.about-text p {
+    font-size: 1rem;
+    margin: 0.5rem 0 1.1rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: 'lovelo';
+}
+
+.products-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.products-container .box {
+    position: relative;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.customers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.customers-container .box {
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.stars i {
+    color: blue;
+}
+
+.customers-container .box p {
+    font-size: 0.938rem;
+}
+
+.customers-container .box h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+}
+
+.customers-container .box img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.customers-container .box:hover {
+    background-color: var(--color-two);
+    color: var(--color-one);
+}
+
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    color: var(--color-one);
+    margin-top: 200px;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer-content {
+    border-radius: 50px 50px 0px 0px;
+    background-color: var(--color-two);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer-contacts h1 {
+    margin-bottom: 0.75rem;
+    font-size: 25px;
+    font-family: 'open sauce';
+}
+
+#footer-social-media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer-social-media .footer-link {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: white;
+}
+
+#footer-social-media .footer-link i {
+    font-size: 20px;
+}
+
+.footer-list {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: #454346;
+    font-weight: 500;
+}
+
+#footer-subscribe {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer-subscribe p {
+    color: #454346;
+    font-weight: 500;
+}
+
+#input-group {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#input-group input {
+    background-color: var(--color-one);
+    border: none;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#input-group input:focus,
+#input-group input:active {
+    outline: none;
+}
+
+#input-group button {
+    border: none;
+    padding: 0px 1.25rem;
+    font-size: 22.5px;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #454346;
+    cursor: pointer;
+}
+
+#copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-two);
+    padding: 1.5rem;
+}
+
+
+@media screen and (max-width:1058px) {
+    nav {
+        padding: 15px 60px;
+    }
+
+    section {
+        padding: 50px 60px;
+    }
+
+    .home-text h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width:991px) {
+    nav {
+        padding: 16px 4%;
+    }
+
+    section {
+        padding: 50px 4%;
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;  
+    }
 }
