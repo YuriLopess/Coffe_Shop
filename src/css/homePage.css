@@ -12,6 +12,7 @@
     src: url(../assets/fonts/OpenSauceOne-Black.ttf);
 }
 
+/* Defining variables */
 :root {
     --color-one: #E6E6E6;
     --color-two: #181717;
@@ -19,6 +20,7 @@
     --box-shadow: 2px 2px 10px 4px rgb(13 55 54 / 15%);
 }
 
+/* General Customization */
 * {
     margin: 0%;
     padding: 0%;
@@ -31,9 +33,9 @@
 
 body {
     color: var(--color-two);
-    
 }
 
+/* Header customization */
 nav {
     position:absolute;
     width: 100%;
@@ -117,6 +119,7 @@ nav i {
     display: none;
 }
 
+/* Home customization*/
 section {
     padding: 50px 100px;
 }
@@ -189,12 +192,13 @@ section {
     background-color: var(--color-two);
 }
 
+/* About customization */
 .about {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 1.5rem;
-    margin: 50px 0;
+    margin: 100px 0;
 }
 
 .about-img img {
@@ -219,6 +223,11 @@ section {
     font-style: normal;
 }
 
+.products {
+    margin: 50px 0;
+}
+
+/* Products customization */
 .heading {
     text-align: center;
 }
@@ -303,9 +312,13 @@ section {
     border: 3px solid var(--color-two);
 }
 
+/* Customers customization */
+
+.customers {
+    margin: 100px 0;
+}
 .customers-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    display: flex;
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -349,6 +362,7 @@ section {
     padding: 30px;
 }
 
+/* footer customization */
 footer {
     width: 100%;
     box-sizing: border-box;
@@ -456,7 +470,31 @@ footer {
     padding: 1.5rem;
 }
 
+/* Animation scroll */ 
+.about-img,
+.about-text h2,
+.about-text p,
+.about .buttons {
+    visibility: hidden;
+}
 
+.products .heading,
+#item-1,
+#item-2,
+#item-3,
+#item-4,
+.heading-button{
+    visibility: hidden;
+}
+
+.customers .heading,
+#box-1,
+#box-2,
+#box-3{
+    visibility: hidden;
+}
+
+/* Responsiveness */
 @media screen and (max-width:1058px) {
     nav {
         padding: 15px 60px;

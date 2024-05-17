@@ -201,18 +201,7 @@ body.show-cart header {
 }
 
 body.show-cart .heading {
-    transform: translateX(-220px);
-}
-
-body.show-cart .listProduct {
-
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-body.show-cart .item {
-    transform: translateX(-20px);
-    width: 250px;
+    transform: translateX(-180px);
 }
 
 body.show-cart #block {

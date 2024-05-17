@@ -293,3 +293,16 @@ footer {
     background-color: var(--color-two);
     padding: 1.5rem;
 }
+
+.title,
+.content,
+#place {
+    visibility: hidden;
+}
+
+#blend,
+#second-title, 
+.sub-title,
+.paragraph {
+    visibility: hidden;
+}
