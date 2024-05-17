@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="../assets/img/favicon.png">
     <title>Reserve Rest</title>
 </head>
-<body>
+<body class="">
     
     <!-- Header Section -->
     <header>
@@ -20,68 +20,48 @@
                 <li><a href="productPage.html">Products</a></li>
                 <li><a href="storyPage.html">About Us</a></li>
             </ul>
+            <a href="/src/pages/login.html"><i class="fa-solid fa-right-to-bracket" id="login"></i></a>
             <div class="header-icons">
-                <a href="#"><i class="fa-solid fa-cart-shopping" id="cart"></i></a></i>
-                <a href="/src/pages/login.html"><i class="fa-solid fa-right-to-bracket" id="login"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </nav>
     </header>
 
     <main>
-        <!-- Title section -->
-        <div id="title">
-            <h1>Explore the recent products</h1>
+
+        <div class="cart-tab">
+            <h1>Shopping Cart</h1>
+            <div class="list-cart">
+                <div class="item">
+                    
+                </div>
+
+            </div>
+            <div class="btn">
+                <button class="close">close</button>
+                <button class="checkOut">check out</button>
+            </div>
         </div>
-    
-        <!-- Subtitle section -->
-        <div id="sub-title">
-            <p>The new premium coffee beans from Reserv Roast promise an unparalleled flavor experience.</p>
-        </div>
-    
-        <!-- Products section -->
-        <section class="products">
-            <div class="products-block">
-                <img src="../assets/img/productViennese.png" alt="product" class="product-img">
-                <h5 class="product-label">Viennese - 500g</h1>
-                <p class="product-price">$20,00</p>
-            
-                <div class="products-button">
-                    <button>BUY</button>
+
+        <section class="products" id="products">
+            <div class="heading">
+                <h1>Explore the recent products</h1>
+                <p>The new premium coffee beans from Reserv Roast promise an unparalleled flavor experience.</p>
+            </div>
+
+            <!-- Produtos -->
+            <div class="listProduct">
+                <div class="item">
+                    <img src="/src/assets/img/productMorocan.png" alt="product">
+                    <h2>Coffe test</h2>
+                    <div class="price">$999</div>
+                    <button class="addCart">Add to cart</button>
                 </div>
             </div>
-        
-            <div class="products-block">
-                <img src="../assets/img/productMorocan.png" alt="product" class="product-img">
-                <h5 class="product-label">Morocan - 500g</h1>
-                <p class="product-price">$20,00</p>
-            
-                <div class="products-button">
-                    <button>BUY</button>
-                </div>
-            </div>
-        
-            <div class="products-block">
-                <img src="../assets/img/productNewOrleans.png" alt="product" class="product-img">
-                <h5 class="product-label">Orleans - 500g</h1>
-                <p class="product-price">$20,00</p>
-            
-                <div class="products-button">
-                    <button>BUY</button>
-                </div>
-            </div>
-        
-            <div class="products-block">
-                <img src="../assets/img/productItalian.png" alt="product" class="product-img">
-                <h5 class="product-label">Italian - 500g</h1>
-                <p class="product-price">$20,00</p>
-            
-                <div class="products-button">
-                    <button>BUY</button>
-                </div>
-            </div>
+
         </section>
-    
-        <!-- Block section -->
+        <!-- Produtos -->
+        
         <div>
             <section id="block">
                 <img src="../assets/img/productAmerican.png" alt="product" id="block-img">
@@ -89,58 +69,41 @@
                 <button id="block-button">explore our products</button>
             </section>
         </div>
-    
-        <!-- Seasonal title section -->
-        <div id="title-seasonal">
-            <h1>Explore our seasonal products</h1>
-        </div>
-    
-        <!-- Seasonal subtitle section -->
-        <div id="sub-title-seasonal">
-            <p>Experience the unique and fleeting seasonal flavors with Reserv Roast's limited-time coffee beans.</p>
-        </div>
-    
-        <!-- Seasonal products section -->
-        <section class="products">
-            <div class="products-block">
-                <img src="../assets/img/productMorocanBlue.jpg" alt="product" class="product-img">
-                <h5 class="product-label">Morocan Blue - 300g</h1>
-                <p class="product-price">$25,00</p>
-            
-                <div class="products-button">
-                    <button>BUY</button>
-                </div>
+
+        <section class="products" id="products">
+            <div class="heading">
+                <h1>You had any issue with our product?</h1>
+                <p>Put your information, your message and we send it. We will get back to you in less than 24 hours.</p>
             </div>
-        
-            <div class="products-block">
-                <img src="../assets/img/productItalianOrange.jpg" alt="product" class="product-img">
-                <h5 class="product-label">Italian Orange - 300g</h1>
-                <p class="product-price">$25,00</p>
-            
-                <div class="products-button">
-                    <button>BUY</button>
+
+        </section>
+
+        <section class="contact">
+            <form>
+                <div class="row">
+                    <div class="input-group">
+                        <input type="text" id="name" required>
+                        <label for="name"><i class="fa-solid fa-user"></i> Enter your name</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="number" required>
+                        <label for="number"><i class="fa-solid fa-phone"></i> Enter your number</label>
+                    </div>
                 </div>
-            </div>
-        
-            <div class="products-block">
-                <img src="../assets/img/productMorocanPink.jpg" alt="product" class="product-img">
-                <h5 class="product-label">Morocan Pink - 300g</h1>
-                <p class="product-price">$25,00</p>
             
-                <div class="products-button">
-                    <button>BUY</button>
+                <div class="input-group">
+                    <input type="text" id="email" required>
+                    <label for="email"><i class="fa-solid fa-at"></i> Enter your email</label>
                 </div>
-            </div>
-        
-            <div class="products-block">
-                <img src="../assets/img/productVienneseGreen.jpg" alt="product" class="product-img">
-                <h5 class="product-label">Viennese Green - 300g</h1>
-                <p class="product-price">$25,00</p>
-            
-                <div class="products-button">
-                    <button>BUY</button>
+
+                <div class="input-group">
+                    <textarea id="message" id="" rows="8" required></textarea>
+                    <label for="message"><i class="fa-solid fa-envelope"></i> Enter your message</label>
                 </div>
-            </div>
+                <button type="submit">Submit</button>
+
+            </form>
         </section>
     </main>
 
@@ -227,6 +190,6 @@
     </footer>
 
     <!-- Links to JavaScript -->
-    <script src="../script/script.js"></script>
+    <script src="../script/cart.js"></script>
 </body>
 </html>

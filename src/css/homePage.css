@@ -31,6 +31,7 @@
 
 body {
     color: var(--color-two);
+    
 }
 
 nav {
@@ -93,6 +94,15 @@ nav {
     column-gap: 0.8rem;
     cursor: pointer;
     display: flex;
+}
+
+nav i {
+    font-size: 22px;
+    z-index: 1000;
+    column-gap: 0.8rem;
+    cursor: pointer;
+    display: flex;
+    color: var(--color-two);
 }
 
 .header-icons .fa-solid {
@@ -163,6 +173,14 @@ section {
     font-weight: 500;
     font-family: 'lovelo';
     margin: 0 100px 0 10px;
+    transition: 1s;
+    border: 3px solid var(--color-two);
+}
+
+.buttons button:hover {
+    background-color: var(--color-three);
+    color: var(--color-two);
+    border: 3px solid var(--color-two);
 }
 
 .divider {
@@ -211,20 +229,78 @@ section {
     font-family: 'lovelo';
 }
 
-.products-container {
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 2rem;
+.listProduct .item img {
+    filter: drop-shadow(0 10px 20px #0009);
 }
 
-.products-container .box {
-    position: relative;
-    padding: 10%;
+.listProduct {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    border-radius: 0.5rem;
-    box-shadow: var(--box-shadow);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    text-align: center;
+    margin-top: 5rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.listProduct .item {
+    background-color: var(--color-three);
+    padding: 25px 50px;
+    border-radius: 20px;
+    border: 3px solid var(--color-two);
+    transition: 0.5s;
+}
+
+.listProduct .item:hover {
+    padding: 35px 60px;
+}
+
+.listProduct .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProduct .item .price {
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.listProduct .item button {
+    background-color: var(--color-two);
+    color: var(--color-three);
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-family: 'lovelo';
+    border: none;
+    cursor: pointer;
+}
+
+.heading-button {
+    text-align: center;
+}
+
+.heading-button button{
+    cursor: pointer;
+    border: none;
+    background-color: var(--color-two);
+    color: var(--color-one);
+    border-radius: 40px;
+    padding: 15px 50px;
+    font-weight: 500;
+    font-family: 'lovelo';
+    margin-top: 4rem;
+    transition: 1s;
+    border: 3px solid var(--color-two);
+}
+
+.heading-button button:hover {
+    background-color: var(--color-three);
+    color: var(--color-two);
+    border: 3px solid var(--color-two);
 }
 
 .customers-container {
@@ -233,26 +309,33 @@ section {
     gap: 1.5rem;
     margin-top: 2rem;
 }
-
+ 
 .customers-container .box {
     padding: 20px;
     box-shadow: var(--box-shadow);
     border-radius: 0.5rem;
     text-align: center;
+    border: 3px solid var(--color-two);
+    transition: 0.8s;
 }
 
 .stars i {
-    color: blue;
+    color: var(--color-two);
 }
 
 .customers-container .box p {
     font-size: 0.938rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .customers-container .box h2 {
     font-size: 1.2rem;
     font-weight: 600;
     margin: 0.5rem 0 0.5rem;
+    font-family: 'lovelo';
 }
 
 .customers-container .box img {
@@ -263,8 +346,7 @@ section {
 }
 
 .customers-container .box:hover {
-    background-color: var(--color-two);
-    color: var(--color-one);
+    padding: 30px;
 }
 
 footer {

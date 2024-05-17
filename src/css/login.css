@@ -63,10 +63,17 @@ body {
 }
 
 .container a {
-    color: var(--color-two);
     text-decoration: none;
+}
+
+.icon {
     font-size: 13px;
     margin: 15px 0 10px;
+    color: var(--color-two);
+}
+
+#forget {
+    color: var(--color-two);
 }
 
 .container button {
@@ -81,7 +88,22 @@ body {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-top: 10px;
-    cursor: pointer;
+    cursor: pointer; 
+}
+
+.buttons {
+    background-color: var(--color-two);
+    color: var(--color-three);
+    font-size: 12px;
+    padding: 10px 45px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;  
 }
 
 .container button.hidden {
