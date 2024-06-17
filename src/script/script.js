@@ -111,3 +111,43 @@ duration: 3700,
 reset: false});
 
 //Product - Products
+sr.reveal('#block', {origin: "left",
+distance: "200px", 
+duration: 2000,
+reset: false});
+
+//Product - Contact
+sr.reveal('.products .heading h1', {origin: "left",
+distance: "200px", 
+duration: 2000,
+reset: false});
+
+sr.reveal('.products .heading p', {origin: "left",
+distance: "200px", 
+duration: 3000,
+reset: false});
+
+sr.reveal('#input-group-1', {origin: "left",
+distance: "180px", 
+duration: 4000,
+reset: false});
+
+sr.reveal('#input-group-2', {origin: "left",
+distance: "150px", 
+duration: 5000,
+reset: false});
+
+sr.reveal('#input-group-3', {origin: "left",
+distance: "130px", 
+duration: 6000,
+reset: false});
+
+sr.reveal('#input-group-4', {origin: "left",
+distance: "100px", 
+duration: 6500,
+reset: false});
+
+sr.reveal('.contact button', {origin: "bottom",
+distance: "200px", 
+duration: 7000,
+reset: false});

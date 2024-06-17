@@ -512,3 +512,17 @@ footer {
     background-color: var(--color-two);
     padding: 1.5rem;
 }
+
+#block {
+    visibility:hidden;
+}
+
+.products .heading h1,
+.products .heading p,
+#input-group-1,
+#input-group-2,
+#input-group-3,
+#input-group-4,
+.contact button {
+    visibility: hidden;
+}
