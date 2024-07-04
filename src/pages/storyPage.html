@@ -23,14 +23,25 @@
             </ul>
             <a href="/src/pages/login.html"><i class="fa-solid fa-right-to-bracket" id="login"></i></a>
             <div class="header-icons">
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <i class="fa-solid fa-cart-shopping" id="cart" onclick="openModal()"></i>
             </div>
         </nav>
     </header>
 
     <!-- Main Content Section -->
     <main>
-        <!-- Our Story Section -->
+        
+        <section class="popup">
+            <div id="modal">
+                <h2>Pagina Bloqueada</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sunt dicta corporis nemo nihil quia harum perspiciatis itaque quasi ex numquam dignissimos, in non, placeat iusto vitae quidem nobis veniam!</p>
+                <div id="btn-modal">
+                    <button>Produtos</button>
+                    <button onclick="closeModal()">Sair</button>
+                </div>
+            </div>
+        </section> 
+
         <div id="our-story">
             <!-- Story Text -->
             <div>
@@ -141,6 +152,8 @@
             &#169 2024 all rights reserved
         </div>
     </footer>
+
+    <script src="../script/popup.js"></script>
     <script src="../script/script.js"></script>
 </body>
 </html>
