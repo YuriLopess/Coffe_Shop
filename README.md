@@ -1,4 +1,6 @@
-## Reserve Rest - A Stylish and Responsive Restaurant Reservation Website
+## Reserve Rest
+
+![Full Carbon XT 12 Blue (2)](https://github.com/user-attachments/assets/299c54d0-93f0-45ab-b634-90d74a9995ea)
 
 **Description:**
 
@@ -19,7 +21,7 @@ To embark on your Reserve Rest experience, follow these simple steps:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://YOUR_GITHUB_USERNAME/ReserveRest.git
+   git clone https://YOUR_GITHUB_USERNAME/Coffe_Shop.git
    ```
 
 2. **Access the Project Folder:**
@@ -28,19 +30,7 @@ To embark on your Reserve Rest experience, follow these simple steps:
    cd ReserveRest
    ```
 
-3. **Install Dependencies:**
-
-   ```bash
-   npm install
-   ```
-
-4. **Start the Local Server:**
-
-   ```bash
-   npm start
-   ```
-
-5. **Access the Website:**
+3. **Access the Website:**
 
    Open your browser and navigate to the following link: [https://locall.host/3000/](https://locall.host/3000/)
 
